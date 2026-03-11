@@ -25,7 +25,7 @@ src/
 ## 1. Interface initiale
 Interface Gradio
 
-- Choix de la difficulté des mots
+- Choix de la difficulté des mots (seulement noms, verbes, adjectifs et adverbes)
 - Choix de la langue 
 - Objectif utilisateur :
     * **Mémoire** : 

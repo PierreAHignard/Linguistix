@@ -1,11 +1,5 @@
 MODES = ["memory", "learning", "game"]
 
-GOAL = {
-    "memory":   [1, 2],
-    "learning": [1, 2, 3],
-    "game":     [1],
-}
-
 LEVEL = [1,2,3]
 
 MODE_CONFIG = {
@@ -22,5 +16,3 @@ MODE_CONFIG = {
         1: {"questions_allowed": False, "target_language_only": True},
     },
 }
-
-SUPPORTED_LANGUAGES = ["fr", "en", "es", "de", "it", "po"]
