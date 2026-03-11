@@ -59,3 +59,78 @@ Interface Gradio
 - Compte le nombre d'essais
 
 ## 3. Postprocessing
+
+## Dataset Presentation
+
+### French_glossary
+Voici les 35 colonnes de Lexique383, regroupées par thème :
+
+## Identification du mot
+
+| Colonne | Description | Exemple |
+|---|---|---|
+| `ortho` | Forme orthographique (le mot tel qu'écrit) | `chienne` |
+| `phon` | Forme phonologique | `SjEn` |
+| `lemme` | Forme canonique du mot | `chien` |
+| `cgram` | Catégorie grammaticale | `NOM`, `VER`, `ADJ`... |
+| `genre` | Genre | `m`, `f` |
+| `nombre` | Nombre | `s`, `p` |
+| `islem` | Vrai si la forme est elle-même un lemme | `True`/`False` |
+| `infover` | Pour les verbes : mode, temps, personne | `ind:pre:3s` |
+
+## Fréquences
+
+| Colonne | Description |
+|---|---|
+| `freqlemfilms2` | Fréquence du **lemme** dans les sous-titres de films (par million) |
+| `freqlemlivres` | Fréquence du **lemme** dans les livres (par million) |
+| `freqfilms2` | Fréquence de la **forme** dans les sous-titres de films |
+| `freqlivres` | Fréquence de la **forme** dans les livres |
+
+## Structure orthographique et phonologique
+
+| Colonne | Description | Exemple |
+|---|---|---|
+| `nblettres` | Nombre de lettres | `7` |
+| `nbphons` | Nombre de phonèmes | `4` |
+| `cvcv` | Structure orthographique (C=consonne, V=voyelle) | `CCVVCCV` |
+| `p_cvcv` | Structure phonologique | `CYVC` |
+| `syll` | Forme phonologique syllabée | `m@-Ze` |
+| `nbsyll` | Nombre de syllabes | `2` |
+| `cv_cv` | Structure phonologique syllabée | `CV-CV` |
+| `orthosyll` | Syllabation orthographique | `man-ger` |
+| `orthrenv` | Mot orthographique à l'envers | `regnam` |
+| `phonrenv` | Forme phonologique à l'envers | `eZ@m` |
+
+## Voisins lexicaux
+
+| Colonne | Description |
+|---|---|
+| `voisorth` | Nombre de voisins orthographiques (mots à 1 lettre près) |
+| `voisphon` | Nombre de voisins phonologiques |
+| `puorth` | Point d'unicité orthographique |
+| `puphon` | Point d'unicité phonologique |
+| `old20` | Distance orthographique moyenne aux 20 mots les plus proches |
+| `pld20` | Distance phonologique moyenne aux 20 mots les plus proches |
+
+## Homographes et homophones
+
+| Colonne | Description |
+|---|---|
+| `nbhomogr` | Nombre d'homographes (même orthographe, sens différent) |
+| `nbhomoph` | Nombre d'homophones (même prononciation) |
+| `cgramortho` | Toutes les catégories grammaticales possibles pour cette orthographe |
+
+## Morphologie
+
+| Colonne | Description | Exemple |
+|---|---|---|
+| `morphoder` | Forme de base pour la dérivation morphologique | `manger` |
+| `nbmorph` | Nombre de morphèmes | `2` |
+
+## Familiarité
+
+| Colonne | Description |
+|---|---|
+| `deflem` | % de personnes connaissant la définition du lemme |
+| `defobs` | Nombre d'observations pour `deflem` |
