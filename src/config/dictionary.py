@@ -17,7 +17,6 @@ def get_random_word(language: str, level: int) -> str:
     if language not in DICTIONARY:
         raise ValueError(f"The selected language {language} is not supported.")
 
-    return word
 
 def word_exists(word: str, language: str) -> bool:
     """Vérifie si un mot existe dans le dictionnaire de la langue cible."""
